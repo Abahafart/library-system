@@ -5,6 +5,7 @@ plugins {
     id("org.hibernate.orm") version "6.5.2.Final"
     id("org.graalvm.buildtools.native") version "0.10.2"
     id("org.cyclonedx.bom") version "1.8.2"
+    id("jacoco")
 }
 
 group = "com.mistborn"
@@ -24,9 +25,8 @@ configurations {
 
 repositories {
     mavenCentral()
+    mavenLocal()
 }
-
-extra["springCloudVersion"] = "2023.0.2"
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-actuator")
@@ -34,14 +34,19 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.liquibase:liquibase-core")
     implementation("org.springframework.cloud:spring-cloud-starter-circuitbreaker-resilience4j")
-    implementation("org.springframework.cloud:spring-cloud-stream")
+    implementation("org.springframework.cloud:spring-cloud-starter-stream-kafka")
     compileOnly("org.projectlombok:lombok")
+    implementation("org.mapstruct:mapstruct:${property("mapstructVersion")}")
     developmentOnly("org.springframework.boot:spring-boot-devtools")
     runtimeOnly("org.postgresql:postgresql")
     annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
     annotationProcessor("org.projectlombok:lombok")
+    annotationProcessor("org.mapstruct:mapstruct-processor:${property("mapstructVersion")}")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.springframework.cloud:spring-cloud-stream-test-binder")
+    testImplementation("org.jeasy:easy-random-core:${property("easyRandomVersion")}")
+    testImplementation("com.tngtech.archunit:archunit-junit5:${property("archunitVersion")}")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:${property("jupiterApiVersion")}")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
@@ -49,6 +54,10 @@ dependencyManagement {
     imports {
         mavenBom("org.springframework.cloud:spring-cloud-dependencies:${property("springCloudVersion")}")
     }
+}
+
+springBoot() {
+    mainClass.set("com.mistborn.library.system.Application")
 }
 
 hibernate {
@@ -59,4 +68,38 @@ hibernate {
 
 tasks.withType<Test> {
     useJUnitPlatform()
+    finalizedBy(tasks.jacocoTestReport)
+}
+
+tasks.jacocoTestReport {
+    dependsOn(tasks.test)
+    reports {
+        xml.required.set(true)
+        csv.required.set(false)
+        html.outputLocation.set(layout.buildDirectory.dir("jacocoHtml"))
+    }
+    classDirectories.setFrom(files(classDirectories.files.map {
+        fileTree(it) {
+            exclude("**/domain/**")
+        }
+    }))
+}
+
+tasks.jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                minimum = "0.0".toBigDecimal() // Umbral mínimo de cobertura del 00%
+            }
+        }
+    }
+    classDirectories.setFrom(files(classDirectories.files.map {
+        fileTree(it) {
+            exclude("**/event/domain/**")
+        }
+    }))
+}
+
+tasks.check {
+    dependsOn(tasks.jacocoTestCoverageVerification)
 }
