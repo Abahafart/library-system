@@ -30,5 +30,6 @@ public class BookItemDO {
   private BookStatus status;
   private LocalDate dateOfPurchase;
   private LocalDate publicationDate;
+  private LibraryDO library;
 
 }

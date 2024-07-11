@@ -20,5 +20,6 @@ public class BookDO {
   private String publisher;
   private String language;
   private int numberOfPages;
+  private AuthorDO author;
 
 }

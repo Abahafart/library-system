@@ -1,0 +1,70 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: mistborn
+      changes:
+        - createTable:
+            tableName: book_item
+            columns:
+              - column:
+                  name: id
+                  type: UUID
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+                    defaultValueComputed: "UUID()"
+              - column:
+                  name: book_id
+                  type: UUID
+                  constraints:
+                    nullable: false
+              - column:
+                  name: barcode
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: reference_only
+                  type: BOOLEAN
+                  constraints:
+                    nullable: false
+              - column:
+                  name: borrowed
+                  type: DATE
+                  constraints:
+                    nullable: true
+              - column:
+                  name: due_date
+                  type: DATE
+                  constraints:
+                    nullable: true
+              - column:
+                  name: price
+                  type: DECIMAL(10, 2)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: format
+                  type: VARCHAR(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: status
+                  type: VARCHAR(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: date_of_purchase
+                  type: DATE
+                  constraints:
+                    nullable: true
+              - column:
+                  name: publication_date
+                  type: DATE
+                  constraints:
+                    nullable: true
+              - column:
+                  name: library_id
+                  type: UUID
+                  constraints:
+                    nullable: false

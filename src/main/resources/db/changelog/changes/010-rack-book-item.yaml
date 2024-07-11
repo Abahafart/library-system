@@ -1,0 +1,28 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2
+      author: mistborn
+      changes:
+        - createTable:
+            tableName: rack_book_item
+            columns:
+              - column:
+                  name: rack_id
+                  type: UUID
+                  constraints:
+                    nullable: false
+              - column:
+                  name: book_item_id
+                  type: UUID
+                  constraints:
+                    nullable: false
+              - addForeignKeyConstraint:
+                  baseTableName: rack_book_item
+                  baseColumnNames: rack_id
+                  referencedTableName: rack
+                  referencedColumnNames: id
+              - addForeignKeyConstraint:
+                  baseTableName: rack_book_item
+                  baseColumnNames: book_item_id
+                  referencedTableName: book_item
+                  referencedColumnNames: id

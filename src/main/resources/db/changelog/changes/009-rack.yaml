@@ -1,0 +1,25 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: mistborn
+      changes:
+        - createTable:
+            tableName: rack
+            columns:
+              - column:
+                  name: id
+                  type: UUID
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+                    defaultValueComputed: "UUID()"
+              - column:
+                  name: number
+                  type: INT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: location_identifier
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
