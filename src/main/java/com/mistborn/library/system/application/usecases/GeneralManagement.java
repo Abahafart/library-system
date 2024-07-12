@@ -9,7 +9,5 @@ import java.util.List;
 public interface GeneralManagement<M> {
 
   M create(M model);
-  M update(M model);
-  List<M> findAll(M model);
 
 }

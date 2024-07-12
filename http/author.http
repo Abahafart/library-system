@@ -1,0 +1,11 @@
+@host=http://localhost:10001
+### create
+POST /authors
+Content-Type:application/json
+
+{
+  "name": "Brandon Sanderson",
+  "description": "Brandon Sanderson es un escritor estadounidense de literatura fantástica y ciencia ficción. Es conocido sobre todo por el universo ficticio de Cosmere, en el que se ambientan la mayoría de sus novelas de fantasía, entre las que destacan las series Nacidos de la bruma y El archivo de las tormentas."
+}
+
+?? status == 201

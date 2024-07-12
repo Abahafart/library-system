@@ -11,14 +11,4 @@ public class BookReservationManagementInputPort implements BookReservationManage
   public BookReservationDO create(BookReservationDO model) {
     return null;
   }
-
-  @Override
-  public BookReservationDO update(BookReservationDO model) {
-    return null;
-  }
-
-  @Override
-  public List<BookReservationDO> findAll(BookReservationDO model) {
-    return List.of();
-  }
 }

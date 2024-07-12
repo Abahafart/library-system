@@ -11,14 +11,4 @@ public class AccountManagementInputPort implements AccountManagement {
   public AccountDO create(AccountDO model) {
     return null;
   }
-
-  @Override
-  public AccountDO update(AccountDO model) {
-    return null;
-  }
-
-  @Override
-  public List<AccountDO> findAll(AccountDO model) {
-    return List.of();
-  }
 }

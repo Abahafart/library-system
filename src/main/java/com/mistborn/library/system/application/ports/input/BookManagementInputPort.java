@@ -11,14 +11,4 @@ public class BookManagementInputPort implements BookManagement {
   public BookDO create(BookDO model) {
     return null;
   }
-
-  @Override
-  public BookDO update(BookDO model) {
-    return null;
-  }
-
-  @Override
-  public List<BookDO> findAll(BookDO model) {
-    return List.of();
-  }
 }
