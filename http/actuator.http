@@ -1,0 +1,14 @@
+@host=http://localhost:10001
+###
+GET /actuator/info
+GET /actuator/env
+GET /actuator/health
+GET /actuator/health/liveness
+GET /actuator/conditions
+GET /actuator/scheduledtasks
+GET /actuator/threaddump
+GET /actuator/beans
+GET /actuator/metrics
+GET /actuator/configprops
+GET /actuator/httptrace
+GET /actuator/mappings

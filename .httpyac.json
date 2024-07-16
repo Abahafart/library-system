@@ -1,0 +1,11 @@
+{
+  "environments": {
+    "$default": {
+      "name": "name",
+      "description": "description"
+    },
+    "dev": {
+
+    }
+  }
+}

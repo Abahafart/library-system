@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Arthur Conan Doyle",
+    "description": "Escritor británico, conocido por sus historias de Sherlock Holmes.",
+    "books": ["Estudio en escarlata", "El sabueso de los Baskerville", "El signo de los cuatro", "El valle del terror"]
+  },
+  {
+    "name": "Aldous Huxley",
+    "description": "Escritor británico, conocido por su novela distópica 'Un mundo feliz'.",
+    "books": ["Un mundo feliz", "Las puertas de la percepción", "La isla", "Contrapunto"]
+  },
+  {
+    "name": "Albert Camus",
+    "description": "Escritor y filósofo francés, conocido por 'El extranjero' y 'La peste'.",
+    "books": ["El extranjero", "La peste", "La caída", "El mito de Sísifo"]
+  },
+  {
+    "name": "James Baldwin",
+    "description": "Escritor y activista estadounidense, conocido por 'Go Tell It on the Mountain'.",
+    "books": ["Go Tell It on the Mountain", "Giovanni's Room", "The Fire Next Time", "If Beale Street Could Talk"]
+  },
+  {
+    "name": "Margaret Atwood",
+    "description": "Escritora canadiense, conocida por su novela 'El cuento de la criada'.",
+    "books": ["El cuento de la criada", "Alias Grace", "El asesino ciego", "Oryx y Crake"]
+  },
+  {
+    "name": "Naguib Mahfouz",
+    "description": "Escritor egipcio, ganador del Premio Nobel de Literatura, conocido por su 'Trilogía de El Cairo'.",
+    "books": ["Palacio del deseo", "Azúcar callejero", "Entre dos palacios", "La taberna del gato negro"]
+  },
+  {
+    "name": "Salman Rushdie",
+    "description": "Escritor británico-indio, conocido por su novela 'Los versos satánicos'.",
+    "books": ["Los versos satánicos", "Hijos de la medianoche", "El último suspiro del moro", "Joseph Anton"]
+  },
+  {
+    "name": "Chinua Achebe",
+    "description": "Escritor nigeriano, conocido por su novela 'Todo se desmorona'.",
+    "books": ["Todo se desmorona", "La flecha de dios", "Un hombre del pueblo", "Termiteros de la sabana"]
+  },
+  {
+    "name": "Kazuo Ishiguro",
+    "description": "Escritor británico, ganador del Premio Nobel de Literatura, conocido por 'Nunca me abandones'.",
+    "books": ["Nunca me abandones", "Lo que queda del día", "El gigante enterrado", "Pálida luz en las colinas"]
+  },
+  {
+    "name": "Mary Shelley",
+    "description": "Escritora inglesa, conocida por su novela 'Frankenstein'.",
+    "books": ["Frankenstein", "El último hombre", "Valperga", "Mathilda"]
+  },
+  {
+    "name": "George R.R. Martin",
+    "description": "Escritor estadounidense, conocido por su serie de fantasía 'Canción de hielo y fuego'.",
+    "books": ["Juego de tronos", "Choque de reyes", "Tormenta de espadas", "Festín de cuervos"]
+  },
+  {
+    "name": "Emily Brontë",
+    "description": "Escritora inglesa, conocida por su única novela 'Cumbres borrascosas'.",
+    "books": ["Cumbres borrascosas"]
+  },
+  {
+    "name": "Jorge Luis Borges",
+    "description": "Escritor argentino, conocido por su obra 'Ficciones' y 'El Aleph'.",
+    "books": ["Ficciones", "El Aleph", "El libro de arena", "Historia universal de la infamia"]
+  },
+  {
+    "name": "Umberto Eco",
+    "description": "Escritor italiano, conocido por su novela 'El nombre de la rosa'.",
+    "books": ["El nombre de la rosa", "El péndulo de Foucault", "La isla del día de antes", "Baudolino"]
+  },
+  {
+    "name": "Italo Calvino",
+    "description": "Escritor italiano, conocido por 'Las ciudades invisibles' y 'Si una noche de invierno un viajero'.",
+    "books": ["Las ciudades invisibles", "Si una noche de invierno un viajero", "El barón rampante", "El caballero inexistente"]
+  },
+  {
+    "name": "Orhan Pamuk",
+    "description": "Escritor turco, ganador del Premio Nobel de Literatura, conocido por 'Me llamo Rojo'.",
+    "books": ["Me llamo Rojo", "Nieve", "Estambul", "El libro negro"]
+  },
+  {
+    "name": "John Steinbeck",
+    "description": "Escritor estadounidense, conocido por 'Las uvas de la ira' y 'De ratones y hombres'.",
+    "books": ["Las uvas de la ira", "De ratones y hombres", "Al este del Edén", "La perla"]
+  },
+  {
+    "name": "Paulo Coelho",
+    "description": "Escritor brasileño, conocido por su novela 'El alquimista'.",
+    "books": ["El alquimista", "Brida", "Veronika decide morir", "El peregrino"]
+  },
+  {
+    "name": "Ray Bradbury",
+    "description": "Escritor estadounidense, conocido por su novela distópica 'Fahrenheit 451'.",
+    "books": ["Fahrenheit 451", "Crónicas marcianas", "El hombre ilustrado", "La feria de las tinieblas"]
+  },
+  {
+    "name": "John Grisham",
+    "description": "Escritor estadounidense de novelas de suspense legal, conocido por 'El informe Pelícano'.",
+    "books": ["El informe Pelícano", "Tiempo de matar", "La tapadera", "El cliente"]
+  }
+]
