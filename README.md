@@ -86,6 +86,24 @@ To run your existing tests in a native image, run the following goal:
 ```
 $ ./gradlew nativeTest
 ```
+### Insert records from files json
+Verify if you had node installed with
+
+```
+$ node -v
+```
+
+After you have to install next dependency:
+
+```
+$ npm install axios
+```
+
+Go to file .js and execute .js file, example
+```
+$ node authors.js
+```
+
 
 ### Gradle Toolchain support
 
