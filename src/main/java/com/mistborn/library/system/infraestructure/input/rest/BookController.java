@@ -1,12 +1,17 @@
 package com.mistborn.library.system.infraestructure.input.rest;
 
+import java.util.List;
+import java.util.Map;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -56,5 +61,24 @@ public class BookController {
   public void deleteById(@PathVariable String id) {
     log.info("Delete book: {}", id);
     bookManagement.deleteById(id);
+  }
+
+  @GetMapping("/filters")
+  @ResponseStatus(HttpStatus.OK)
+  public List<BookResponse> getBooksByFilters(@RequestParam Map<String, String> allParams) {
+    allParams.forEach((key, value) -> log.info("Key: {}, Value: {}", key, value));
+    return bookManagement.findByTitleOrAuthorOrSubjectOrPublicationDate(allParams).stream()
+        .map(bookMapper::fromModel).toList();
+  }
+
+  @PatchMapping
+  @ResponseStatus(HttpStatus.NO_CONTENT)
+  public void updateBook(@RequestBody BookRequest request) {
+    log.info("Update book request: {}", request);
+    BookDO toUpdate = bookMapper.fromRequest(request);
+    AuthorDO author = new AuthorDO();
+    author.setId(request.getAuthorId().toString());
+    toUpdate.setAuthor(author);
+    bookManagement.update(toUpdate);
   }
 }

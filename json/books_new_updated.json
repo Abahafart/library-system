@@ -1,0 +1,668 @@
+[
+    {
+        "title": "Los versos sat\u00e1nicos",
+        "isbn": "978-8571647371",
+        "subject": "Fiction",
+        "publisher": "Companhia das Letras",
+        "language": "English",
+        "numberOfPages": 546,
+        "authorId": "0afe74d9-ceec-41b9-8cb3-a20fd01162d4"
+    },
+    {
+        "title": "Hijos de la medianoche",
+        "isbn": "978-0140132708",
+        "subject": "Fiction",
+        "publisher": "Jonathan Cape",
+        "language": "English",
+        "numberOfPages": 647,
+        "authorId": "0afe74d9-ceec-41b9-8cb3-a20fd01162d4"
+    },
+    {
+        "title": "El \u00faltimo suspiro del moro",
+        "isbn": "978-0679449237",
+        "subject": "Fiction",
+        "publisher": "Random House",
+        "language": "English",
+        "numberOfPages": 434,
+        "authorId": "0afe74d9-ceec-41b9-8cb3-a20fd01162d4"
+    },
+    {
+        "title": "Joseph Anton",
+        "isbn": "978-0812982602",
+        "subject": "Biography",
+        "publisher": "Random House Trade Paperbacks",
+        "language": "English",
+        "numberOfPages": 656,
+        "authorId": "0afe74d9-ceec-41b9-8cb3-a20fd01162d4"
+    },
+    {
+        "title": "Cumbres borrascosas",
+        "isbn": "978-0141439556",
+        "subject": "Fiction",
+        "publisher": "Penguin Classics",
+        "language": "English",
+        "numberOfPages": 416,
+        "authorId": "6ea4e541-249e-4926-9a9e-c0072b1e1ea8"
+    },
+    {
+        "title": "Palacio del deseo",
+        "isbn": "978-0385264730",
+        "subject": "Fiction",
+        "publisher": "Anchor",
+        "language": "English",
+        "numberOfPages": 392,
+        "authorId": "40154d17-0d8d-4224-af98-4b23582c1bfd"
+    },
+    {
+        "title": "Az\u00facar callejero",
+        "isbn": "978-0099439838",
+        "subject": "Fiction",
+        "publisher": "Vintage",
+        "language": "English",
+        "numberOfPages": 352,
+        "authorId": "40154d17-0d8d-4224-af98-4b23582c1bfd"
+    },
+    {
+        "title": "Entre dos palacios",
+        "isbn": "978-0385264730",
+        "subject": "Fiction",
+        "publisher": "Anchor",
+        "language": "English",
+        "numberOfPages": 512,
+        "authorId": "40154d17-0d8d-4224-af98-4b23582c1bfd"
+    },
+    {
+        "title": "La taberna del gato negro",
+        "isbn": "978-1909942250",
+        "subject": "Fiction",
+        "publisher": "Jolly Roger Press",
+        "language": "English",
+        "numberOfPages": 234,
+        "authorId": "40154d17-0d8d-4224-af98-4b23582c1bfd"
+    },
+    {
+        "title": "Me llamo Rojo",
+        "isbn": "978-0571268832",
+        "subject": "Fiction",
+        "publisher": "Faber & Faber",
+        "language": "English",
+        "numberOfPages": 688,
+        "authorId": "4c0cc132-62b1-456b-83e0-69862e327c64"
+    },
+    {
+        "title": "Nieve",
+        "isbn": "978-1400078905",
+        "subject": "Fiction",
+        "publisher": "Vintage",
+        "language": "English",
+        "numberOfPages": 448,
+        "authorId": "4c0cc132-62b1-456b-83e0-69862e327c64"
+    },
+    {
+        "title": "Estambul",
+        "isbn": "978-0571225255",
+        "subject": "Biography",
+        "publisher": "Faber & Faber",
+        "language": "English",
+        "numberOfPages": 368,
+        "authorId": "4c0cc132-62b1-456b-83e0-69862e327c64"
+    },
+    {
+        "title": "El libro negro",
+        "isbn": "978-0571225255",
+        "subject": "Fiction",
+        "publisher": "Vintage",
+        "language": "English",
+        "numberOfPages": 400,
+        "authorId": "4c0cc132-62b1-456b-83e0-69862e327c64"
+    },
+    {
+        "title": "Estudio en escarlata",
+        "isbn": "978-0141039711",
+        "subject": "Mystery",
+        "publisher": "Penguin Books",
+        "language": "English",
+        "numberOfPages": 108,
+        "authorId": "d687c19a-b05a-4ce4-9f40-2c35d9751a45"
+    },
+    {
+        "title": "El sabueso de los Baskerville",
+        "isbn": "978-0141039643",
+        "subject": "Mystery",
+        "publisher": "Penguin Books",
+        "language": "English",
+        "numberOfPages": 256,
+        "authorId": "d687c19a-b05a-4ce4-9f40-2c35d9751a45"
+    },
+    {
+        "title": "El signo de los cuatro",
+        "isbn": "978-0141039810",
+        "subject": "Mystery",
+        "publisher": "Penguin Books",
+        "language": "English",
+        "numberOfPages": 160,
+        "authorId": "d687c19a-b05a-4ce4-9f40-2c35d9751a45"
+    },
+    {
+        "title": "El valle del terror",
+        "isbn": "978-0141039797",
+        "subject": "Mystery",
+        "publisher": "Penguin Books",
+        "language": "English",
+        "numberOfPages": 224,
+        "authorId": "d687c19a-b05a-4ce4-9f40-2c35d9751a45"
+    },
+    {
+        "title": "El informe Pel\u00edcano",
+        "isbn": "978-0440214045",
+        "subject": "Thriller",
+        "publisher": "Dell",
+        "language": "English",
+        "numberOfPages": 642,
+        "authorId": "0ab85c7f-1c94-4a7f-afdd-4c984d4ff65e"
+    },
+    {
+        "title": "Tiempo de matar",
+        "isbn": "978-0385338608",
+        "subject": "Thriller",
+        "publisher": "Dell",
+        "language": "English",
+        "numberOfPages": 655,
+        "authorId": "0ab85c7f-1c94-4a7f-afdd-4c984d4ff65e"
+    },
+    {
+        "title": "La tapadera",
+        "isbn": "978-0385416344",
+        "subject": "Thriller",
+        "publisher": "Dell",
+        "language": "English",
+        "numberOfPages": 576,
+        "authorId": "0ab85c7f-1c94-4a7f-afdd-4c984d4ff65e"
+    },
+    {
+        "title": "El cliente",
+        "isbn": "978-0385339087",
+        "subject": "Thriller",
+        "publisher": "Dell",
+        "language": "English",
+        "numberOfPages": 544,
+        "authorId": "0ab85c7f-1c94-4a7f-afdd-4c984d4ff65e"
+    },
+    {
+        "title": "Nunca me abandones",
+        "isbn": "978-1400078776",
+        "subject": "Fiction",
+        "publisher": "Vintage",
+        "language": "English",
+        "numberOfPages": 288,
+        "authorId": "1d639156-0aa0-4ca4-828d-a4cefed8cae9"
+    },
+    {
+        "title": "Lo que queda del d\u00eda",
+        "isbn": "978-0571258247",
+        "subject": "Fiction",
+        "publisher": "Faber & Faber",
+        "language": "English",
+        "numberOfPages": 258,
+        "authorId": "1d639156-0aa0-4ca4-828d-a4cefed8cae9"
+    },
+    {
+        "title": "El gigante enterrado",
+        "isbn": "978-0307455796",
+        "subject": "Fiction",
+        "publisher": "Knopf",
+        "language": "English",
+        "numberOfPages": 345,
+        "authorId": "1d639156-0aa0-4ca4-828d-a4cefed8cae9"
+    },
+    {
+        "title": "P\u00e1lida luz en las colinas",
+        "isbn": "978-0571206545",
+        "subject": "Fiction",
+        "publisher": "Faber & Faber",
+        "language": "English",
+        "numberOfPages": 183,
+        "authorId": "1d639156-0aa0-4ca4-828d-a4cefed8cae9"
+    },
+    {
+        "title": "Fahrenheit 451",
+        "isbn": "978-1451673319",
+        "subject": "Science Fiction",
+        "publisher": "Simon & Schuster",
+        "language": "English",
+        "numberOfPages": 249,
+        "authorId": "78ab331a-1009-48e1-80f2-40c054cc84a3"
+    },
+    {
+        "title": "Cr\u00f3nicas marcianas",
+        "isbn": "978-1451678192",
+        "subject": "Science Fiction",
+        "publisher": "Simon & Schuster",
+        "language": "English",
+        "numberOfPages": 241,
+        "authorId": "78ab331a-1009-48e1-80f2-40c054cc84a3"
+    },
+    {
+        "title": "El hombre ilustrado",
+        "isbn": "978-1451678185",
+        "subject": "Science Fiction",
+        "publisher": "Simon & Schuster",
+        "language": "English",
+        "numberOfPages": 288,
+        "authorId": "78ab331a-1009-48e1-80f2-40c054cc84a3"
+    },
+    {
+        "title": "La feria de las tinieblas",
+        "isbn": "978-1451678000",
+        "subject": "Fantasy",
+        "publisher": "Simon & Schuster",
+        "language": "English",
+        "numberOfPages": 320,
+        "authorId": "78ab331a-1009-48e1-80f2-40c054cc84a3"
+    },
+    {
+        "title": "Un mundo feliz,Las puertas de la percepci\u00f3n,La isla,Contrapunto",
+        "isbn": "978-0060535261",
+        "subject": "Fiction",
+        "publisher": "Harper Perennial Modern Classics",
+        "language": "English",
+        "numberOfPages": 432,
+        "authorId": "f4be148a-43d4-40f6-a852-fd2f469b6618"
+    },
+    {
+        "title": "Ficciones",
+        "isbn": "978-0802130303",
+        "subject": "Fiction",
+        "publisher": "Grove Press",
+        "language": "English",
+        "numberOfPages": 174,
+        "authorId": "6dd1d56e-1943-46bd-a315-7faf294a9be5"
+    },
+    {
+        "title": "El Aleph",
+        "isbn": "978-0142437889",
+        "subject": "Fiction",
+        "publisher": "Penguin Classics",
+        "language": "English",
+        "numberOfPages": 176,
+        "authorId": "6dd1d56e-1943-46bd-a315-7faf294a9be5"
+    },
+    {
+        "title": "El libro de arena",
+        "isbn": "978-0811225816",
+        "subject": "Fiction",
+        "publisher": "New Directions",
+        "language": "English",
+        "numberOfPages": 226,
+        "authorId": "6dd1d56e-1943-46bd-a315-7faf294a9be5"
+    },
+    {
+        "title": "Historia universal de la infamia",
+        "isbn": "978-8437604947",
+        "subject": "Fiction",
+        "publisher": "C\u00e1tedra",
+        "language": "English",
+        "numberOfPages": 136,
+        "authorId": "6dd1d56e-1943-46bd-a315-7faf294a9be5"
+    },
+    {
+        "title": "El cuento de la criada",
+        "isbn": "978-0385490818",
+        "subject": "Fiction",
+        "publisher": "Anchor",
+        "language": "English",
+        "numberOfPages": 311,
+        "authorId": "673bf497-64ed-4712-ab79-3e158f30e41f"
+    },
+    {
+        "title": "Alias Grace",
+        "isbn": "978-0385490443",
+        "subject": "Fiction",
+        "publisher": "Anchor",
+        "language": "English",
+        "numberOfPages": 480,
+        "authorId": "673bf497-64ed-4712-ab79-3e158f30e41f"
+    },
+    {
+        "title": "El asesino ciego",
+        "isbn": "978-0385720953",
+        "subject": "Fiction",
+        "publisher": "Anchor",
+        "language": "English",
+        "numberOfPages": 521,
+        "authorId": "673bf497-64ed-4712-ab79-3e158f30e41f"
+    },
+    {
+        "title": "Oryx y Crake",
+        "isbn": "978-0385721677",
+        "subject": "Fiction",
+        "publisher": "Anchor",
+        "language": "English",
+        "numberOfPages": 376,
+        "authorId": "673bf497-64ed-4712-ab79-3e158f30e41f"
+    },
+    {
+        "title": "El alquimista",
+        "isbn": "978-0062315007",
+        "subject": "Fiction",
+        "publisher": "HarperOne",
+        "language": "English",
+        "numberOfPages": 208,
+        "authorId": "c3b8fa94-48f9-4f91-9996-05c126766acc"
+    },
+    {
+        "title": "Brida",
+        "isbn": "978-0061762703",
+        "subject": "Fiction",
+        "publisher": "HarperOne",
+        "language": "English",
+        "numberOfPages": 224,
+        "authorId": "c3b8fa94-48f9-4f91-9996-05c126766acc"
+    },
+    {
+        "title": "Veronika decide morir",
+        "isbn": "978-0061124266",
+        "subject": "Fiction",
+        "publisher": "HarperOne",
+        "language": "English",
+        "numberOfPages": 240,
+        "authorId": "c3b8fa94-48f9-4f91-9996-05c126766acc"
+    },
+    {
+        "title": "El peregrino",
+        "isbn": "978-0060733736",
+        "subject": "Fiction",
+        "publisher": "HarperOne",
+        "language": "English",
+        "numberOfPages": 272,
+        "authorId": "c3b8fa94-48f9-4f91-9996-05c126766acc"
+    },
+    {
+        "title": "Frankenstein",
+        "isbn": "978-0486282114",
+        "subject": "Fiction",
+        "publisher": "Dover Publications",
+        "language": "English",
+        "numberOfPages": 166,
+        "authorId": "80aefe66-9486-4422-86b7-680fef9bdaa0"
+    },
+    {
+        "title": "El \u00faltimo hombre",
+        "isbn": "978-0486432083",
+        "subject": "Fiction",
+        "publisher": "Dover Publications",
+        "language": "English",
+        "numberOfPages": 380,
+        "authorId": "80aefe66-9486-4422-86b7-680fef9bdaa0"
+    },
+    {
+        "title": "Valperga",
+        "isbn": "978-0199236552",
+        "subject": "Fiction",
+        "publisher": "Oxford University Press",
+        "language": "English",
+        "numberOfPages": 528,
+        "authorId": "80aefe66-9486-4422-86b7-680fef9bdaa0"
+    },
+    {
+        "title": "Mathilda",
+        "isbn": "978-1551114043",
+        "subject": "Fiction",
+        "publisher": "Broadview Press",
+        "language": "English",
+        "numberOfPages": 195,
+        "authorId": "80aefe66-9486-4422-86b7-680fef9bdaa0"
+    },
+    {
+        "title": "El nombre de la rosa",
+        "isbn": "978-0156001311",
+        "subject": "Fiction",
+        "publisher": "Harvest Books",
+        "language": "English",
+        "numberOfPages": 536,
+        "authorId": "1feb712c-1494-4e3e-a2fe-1861d2cad99c"
+    },
+    {
+        "title": "El p\u00e9ndulo de Foucault",
+        "isbn": "978-0156032971",
+        "subject": "Fiction",
+        "publisher": "Mariner Books",
+        "language": "English",
+        "numberOfPages": 656,
+        "authorId": "1feb712c-1494-4e3e-a2fe-1861d2cad99c"
+    },
+    {
+        "title": "La isla del d\u00eda de antes",
+        "isbn": "978-0156029063",
+        "subject": "Fiction",
+        "publisher": "Mariner Books",
+        "language": "English",
+        "numberOfPages": 528,
+        "authorId": "1feb712c-1494-4e3e-a2fe-1861d2cad99c"
+    },
+    {
+        "title": "Baudolino",
+        "isbn": "978-0156011600",
+        "subject": "Fiction",
+        "publisher": "Mariner Books",
+        "language": "English",
+        "numberOfPages": 528,
+        "authorId": "1feb712c-1494-4e3e-a2fe-1861d2cad99c"
+    },
+    {
+        "title": "Go Tell It on the Mountain",
+        "isbn": "978-0345806543",
+        "subject": "Fiction",
+        "publisher": "Vintage",
+        "language": "English",
+        "numberOfPages": 240,
+        "authorId": "3dcc1ff4-9cbc-4037-8bc0-fb940dd045de"
+    },
+    {
+        "title": "Giovanni's Room",
+        "isbn": "978-0345806567",
+        "subject": "Fiction",
+        "publisher": "Vintage",
+        "language": "English",
+        "numberOfPages": 176,
+        "authorId": "3dcc1ff4-9cbc-4037-8bc0-fb940dd045de"
+    },
+    {
+        "title": "The Fire Next Time",
+        "isbn": "978-0679744726",
+        "subject": "Fiction",
+        "publisher": "Vintage",
+        "language": "English",
+        "numberOfPages": 128,
+        "authorId": "3dcc1ff4-9cbc-4037-8bc0-fb940dd045de"
+    },
+    {
+        "title": "If Beale Street Could Talk",
+        "isbn": "978-0307275936",
+        "subject": "Fiction",
+        "publisher": "Vintage",
+        "language": "English",
+        "numberOfPages": 197,
+        "authorId": "3dcc1ff4-9cbc-4037-8bc0-fb940dd045de"
+    },
+    {
+        "title": "Las uvas de la ira",
+        "isbn": "978-0143039433",
+        "subject": "Fiction",
+        "publisher": "Penguin Classics",
+        "language": "English",
+        "numberOfPages": 464,
+        "authorId": "3553bb83-0b3f-4845-8d2d-001f00d7ed31"
+    },
+    {
+        "title": "De ratones y hombres",
+        "isbn": "978-0140177398",
+        "subject": "Fiction",
+        "publisher": "Penguin Classics",
+        "language": "English",
+        "numberOfPages": 112,
+        "authorId": "3553bb83-0b3f-4845-8d2d-001f00d7ed31"
+    },
+    {
+        "title": "Al este del Ed\u00e9n",
+        "isbn": "978-0142000656",
+        "subject": "Fiction",
+        "publisher": "Penguin Books",
+        "language": "English",
+        "numberOfPages": 601,
+        "authorId": "3553bb83-0b3f-4845-8d2d-001f00d7ed31"
+    },
+    {
+        "title": "La perla",
+        "isbn": "978-0140177374",
+        "subject": "Fiction",
+        "publisher": "Penguin Books",
+        "language": "English",
+        "numberOfPages": 90,
+        "authorId": "3553bb83-0b3f-4845-8d2d-001f00d7ed31"
+    },
+    {
+        "title": "El extranjero",
+        "isbn": "978-0679720201",
+        "subject": "Fiction",
+        "publisher": "Vintage",
+        "language": "English",
+        "numberOfPages": 123,
+        "authorId": "77098b78-7cde-4f83-945b-8524f3ed254e"
+    },
+    {
+        "title": "La peste",
+        "isbn": "978-0679720218",
+        "subject": "Fiction",
+        "publisher": "Vintage",
+        "language": "English",
+        "numberOfPages": 308,
+        "authorId": "77098b78-7cde-4f83-945b-8524f3ed254e"
+    },
+    {
+        "title": "La ca\u00edda",
+        "isbn": "978-0679720225",
+        "subject": "Fiction",
+        "publisher": "Vintage",
+        "language": "English",
+        "numberOfPages": 147,
+        "authorId": "77098b78-7cde-4f83-945b-8524f3ed254e"
+    },
+    {
+        "title": "El mito de S\u00edsifo",
+        "isbn": "978-0679733737",
+        "subject": "Philosophy",
+        "publisher": "Vintage",
+        "language": "English",
+        "numberOfPages": 212,
+        "authorId": "77098b78-7cde-4f83-945b-8524f3ed254e"
+    },
+    {
+        "title": "Las ciudades invisibles",
+        "isbn": "978-0156453806",
+        "subject": "Fiction",
+        "publisher": "Harvest Books",
+        "language": "English",
+        "numberOfPages": 165,
+        "authorId": "f1c7fda2-63ec-4cfe-bb51-f71cab083b8a"
+    },
+    {
+        "title": "Si una noche de invierno un viajero",
+        "isbn": "978-0156439619",
+        "subject": "Fiction",
+        "publisher": "Harvest Books",
+        "language": "English",
+        "numberOfPages": 260,
+        "authorId": "f1c7fda2-63ec-4cfe-bb51-f71cab083b8a"
+    },
+    {
+        "title": "El bar\u00f3n rampante",
+        "isbn": "978-0156106801",
+        "subject": "Fiction",
+        "publisher": "Harvest Books",
+        "language": "English",
+        "numberOfPages": 217,
+        "authorId": "f1c7fda2-63ec-4cfe-bb51-f71cab083b8a"
+    },
+    {
+        "title": "El caballero inexistente",
+        "isbn": "978-0156462389",
+        "subject": "Fiction",
+        "publisher": "Harvest Books",
+        "language": "English",
+        "numberOfPages": 137,
+        "authorId": "f1c7fda2-63ec-4cfe-bb51-f71cab083b8a"
+    },
+    {
+        "title": "Todo se desmorona",
+        "isbn": "978-0385474542",
+        "subject": "Fiction",
+        "publisher": "Anchor",
+        "language": "English",
+        "numberOfPages": 209,
+        "authorId": "8d671676-9049-4b32-9743-4f0014b39c15"
+    },
+    {
+        "title": "La flecha de dios",
+        "isbn": "978-0385014808",
+        "subject": "Fiction",
+        "publisher": "Anchor",
+        "language": "English",
+        "numberOfPages": 240,
+        "authorId": "8d671676-9049-4b32-9743-4f0014b39c15"
+    },
+    {
+        "title": "Un hombre del pueblo",
+        "isbn": "978-0385086164",
+        "subject": "Fiction",
+        "publisher": "Anchor",
+        "language": "English",
+        "numberOfPages": 160,
+        "authorId": "8d671676-9049-4b32-9743-4f0014b39c15"
+    },
+    {
+        "title": "Termiteros de la sabana",
+        "isbn": "978-0385474559",
+        "subject": "Fiction",
+        "publisher": "Anchor",
+        "language": "English",
+        "numberOfPages": 248,
+        "authorId": "8d671676-9049-4b32-9743-4f0014b39c15"
+    },
+    {
+        "title": "Juego de tronos",
+        "isbn": "978-0553103540",
+        "subject": "Fantasy",
+        "publisher": "Bantam Books",
+        "language": "English",
+        "numberOfPages": 694,
+        "authorId": "ce33639d-68ad-407a-a96d-0a9f4b02a1e5"
+    },
+    {
+        "title": "Choque de reyes",
+        "isbn": "978-0553108033",
+        "subject": "Fantasy",
+        "publisher": "Bantam Books",
+        "language": "English",
+        "numberOfPages": 768,
+        "authorId": "ce33639d-68ad-407a-a96d-0a9f4b02a1e5"
+    },
+    {
+        "title": "Tormenta de espadas",
+        "isbn": "978-0553106633",
+        "subject": "Fantasy",
+        "publisher": "Bantam Books",
+        "language": "English",
+        "numberOfPages": 973,
+        "authorId": "ce33639d-68ad-407a-a96d-0a9f4b02a1e5"
+    },
+    {
+        "title": "Fest\u00edn de cuervos",
+        "isbn": "978-0553801507",
+        "subject": "Fantasy",
+        "publisher": "Bantam Books",
+        "language": "English",
+        "numberOfPages": 753,
+        "authorId": "ce33639d-68ad-407a-a96d-0a9f4b02a1e5"
+    }
+]

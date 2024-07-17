@@ -1,7 +1,6 @@
 package com.mistborn.library.system.infraestructure.output.persistence;
 
 import java.util.List;
-import java.util.Map;
 import java.util.UUID;
 
 import org.springframework.stereotype.Repository;
@@ -39,9 +38,18 @@ public class BookPostgreSQLAdapter implements BookPersistenceManagement {
   }
 
   @Override
-  public List<BookDO> findByTitleOrAuthorOrSubjectOrPublicationDate(
-      Map<String, String> queryParams) {
-    return List.of();
+  public List<BookDO> findBySubject(String subject) {
+    return repository.findBySubject(subject).stream().map(mapper::fromEntity).toList();
+  }
+
+  @Override
+  public List<BookDO> findByTitle(String title) {
+    return repository.findByTitle(title).stream().map(mapper::fromEntity).toList();
+  }
+
+  @Override
+  public List<BookDO> findByAuthorId(String id) {
+    return repository.findByAuthorId(UUID.fromString(id)).stream().map(mapper::fromEntity).toList();
   }
 
   @Override
@@ -50,7 +58,7 @@ public class BookPostgreSQLAdapter implements BookPersistenceManagement {
   }
 
   @Override
-  public BookDO update(BookDO bookDO) {
-    return null;
+  public BookDO update(BookDO model) {
+    return mapper.fromEntity(repository.save(mapper.toEntity(model)));
   }
 }
