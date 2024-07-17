@@ -1,5 +1,7 @@
 package com.mistborn.library.system.domain.rest.request;
 
+import java.util.UUID;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -13,6 +15,6 @@ public class BookRequest {
   private String publisher;
   private String language;
   private int numberOfPages;
-  private AuthorRequest author;
+  private UUID authorId;
 
 }

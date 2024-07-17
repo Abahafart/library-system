@@ -1,0 +1,29 @@
+@host=http://localhost:10001
+### create
+POST /books
+Content-Type:application/json
+
+{
+  "title": "Hijos de la medianoche",
+  "isbn": "978-8497934329",
+  "subject": "Ficción histórica",
+  "publisher": "Debolsillo",
+  "language": "Español",
+  "numberOfPages": 800,
+  "authorId": "0afe74d9-ceec-41b9-8cb3-a20fd01162d4"
+}
+
+
+?? status == 201
+
+### getById
+GET /books/{{id}}
+Content-Type:application/json
+
+?? status 200
+
+### deleteById
+DELETE /books/{{id}}
+Content-Type:application/json
+
+?? status 204

@@ -1,8 +1,7 @@
 {
   "environments": {
     "$default": {
-      "name": "name",
-      "description": "description"
+      "id": "a32396bd-2aed-489b-b9c3-8407da1a26d6"
     },
     "dev": {
 
