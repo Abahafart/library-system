@@ -8,8 +8,11 @@ import com.mistborn.library.system.domain.BookDO;
 public interface BookManagement extends GeneralManagement<BookDO> {
 
   BookDO getById(String id);
+
   List<BookDO> findByTitleOrAuthorOrSubjectOrPublicationDate(Map<String, String> queryParams);
+
   void deleteById(String id);
+
   BookDO update(BookDO bookDO);
 
 }

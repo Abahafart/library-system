@@ -2,7 +2,8 @@ package com.mistborn.library.system.domain.constants;
 
 public class BookConstants {
 
-  private BookConstants() {}
+  private BookConstants() {
+  }
 
   public static final String AUTHOR = "author";
   public static final String TITLE = "title";

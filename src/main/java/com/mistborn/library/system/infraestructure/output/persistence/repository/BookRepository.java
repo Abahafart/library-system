@@ -10,7 +10,9 @@ import com.mistborn.library.system.infraestructure.output.persistence.data.BookD
 public interface BookRepository extends JpaRepository<BookData, UUID> {
 
   List<BookData> findByTitle(String title);
+
   List<BookData> findBySubject(String subject);
+
   List<BookData> findByAuthorId(UUID authorId);
 
 }

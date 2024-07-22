@@ -9,6 +9,7 @@ import com.mistborn.library.system.infraestructure.config.MappingConfig;
 import com.mistborn.library.system.infraestructure.output.persistence.data.AuthorData;
 
 @Mapper(config = MappingConfig.class)
-public interface AuthorMapper extends GenericMapper<AuthorDO, AuthorRequest, AuthorResponse, AuthorData> {
+public interface AuthorMapper extends
+    GenericMapper<AuthorDO, AuthorRequest, AuthorResponse, AuthorData> {
 
 }

@@ -34,7 +34,8 @@ public class BookPostgreSQLAdapter implements BookPersistenceManagement {
   @Override
   public BookDO getById(String id) {
     return mapper.fromEntity(repository.findById(UUID.fromString(id))
-        .orElseThrow(() -> new InformationNotFoundException(String.format("Book with id '%s' not found", id))));
+        .orElseThrow(() -> new InformationNotFoundException(
+            String.format("Book with id '%s' not found", id))));
   }
 
   @Override

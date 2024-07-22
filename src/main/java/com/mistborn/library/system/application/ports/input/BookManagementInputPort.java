@@ -47,7 +47,8 @@ public class BookManagementInputPort implements BookManagement {
     List<BookDO> records = new ArrayList<>();
     if (queryParams.containsKey(AUTHOR)) {
       List<AuthorDO> authors = authorPersistenceManagement.findByName(queryParams.get(AUTHOR));
-      authors.forEach(author -> records.addAll(persistenceManagement.findByAuthorId(author.getId())));
+      authors.forEach(
+          author -> records.addAll(persistenceManagement.findByAuthorId(author.getId())));
     }
     if (queryParams.containsKey(TITLE)) {
       records.addAll(persistenceManagement.findByTitle(queryParams.get(TITLE)));

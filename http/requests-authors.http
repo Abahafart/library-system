@@ -294,3 +294,7 @@ Content-Type: application/json
     "El cliente"
   ]
 }
+
+###
+GET http://localhost:10001/authors/John
+Content-Type: application/json

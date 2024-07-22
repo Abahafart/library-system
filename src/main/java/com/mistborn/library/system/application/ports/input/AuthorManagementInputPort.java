@@ -20,4 +20,9 @@ public class AuthorManagementInputPort implements AuthorManagement {
   public AuthorDO create(AuthorDO model) {
     return persistenceManagement.save(model);
   }
+
+  @Override
+  public List<AuthorDO> getByName(String authorName) {
+    return persistenceManagement.findByName(authorName);
+  }
 }

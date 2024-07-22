@@ -1,6 +1,10 @@
 package com.mistborn.library.system.infraestructure.input.rest;
 
+import java.util.List;
+
 import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,6 +21,7 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @RestController
+@RequestMapping("/authors")
 public class AuthorController {
 
   private final AuthorManagement authorManagement;
@@ -27,12 +32,19 @@ public class AuthorController {
     this.mapper = mapper;
   }
 
-  @PostMapping(path = "/authors")
+  @PostMapping
   @ResponseStatus(HttpStatus.CREATED)
   public AuthorResponse create(@RequestBody AuthorRequest authorRequest) {
     log.info("Create author request: {}", authorRequest);
     AuthorDO created = authorManagement.create(mapper.fromRequest(authorRequest));
     log.info("Created author response: {}", created);
     return mapper.fromModel(created);
+  }
+
+  @GetMapping("/{authorName}")
+  @ResponseStatus(HttpStatus.OK)
+  public List<AuthorResponse> findByAuthorName(@PathVariable("authorName") String authorName) {
+    log.info("Find author by author name: {}", authorName);
+    return authorManagement.getByName(authorName).stream().map(mapper::fromModel).toList();
   }
 }

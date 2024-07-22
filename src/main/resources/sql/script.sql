@@ -14,10 +14,10 @@ alter table address
 
 create table library
 (
-    id      uuid         not null
+    id         uuid         not null
         primary key,
-    name    varchar(255) not null,
-    address_id uuid      not null,
+    name       varchar(255) not null,
+    address_id uuid         not null,
     foreign key (address_id) references address (id)
 );
 

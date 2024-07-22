@@ -9,6 +9,6 @@ import com.mistborn.library.system.infraestructure.output.persistence.data.Autho
 
 public interface AuthorRepository extends JpaRepository<AuthorData, UUID> {
 
-  List<AuthorData> findByName(String name);
+  List<AuthorData> findByNameContainsIgnoreCase(String name);
 
 }

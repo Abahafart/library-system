@@ -32,11 +32,12 @@ public class AuthorPostgreSQLAdapter implements AuthorPersistenceManagement {
   @Override
   public AuthorDO getById(String id) {
     return repository.findById(UUID.fromString(id)).map(mapper::fromEntity)
-        .orElseThrow(() -> new InformationNotFoundException(String.format("Author with id %s not found", id)));
+        .orElseThrow(() -> new InformationNotFoundException(
+            String.format("Author with id %s not found", id)));
   }
 
   @Override
   public List<AuthorDO> findByName(String name) {
-    return repository.findByName(name).stream().map(mapper::fromEntity).toList();
+    return repository.findByNameContainsIgnoreCase(name).stream().map(mapper::fromEntity).toList();
   }
 }
