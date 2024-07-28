@@ -11,18 +11,16 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@Entity(name = "books")
-public class BookData {
+@Entity(name = "addresses")
+public class AddressData {
 
   @Id
   @GeneratedValue(strategy = GenerationType.UUID)
   private UUID id;
-  private String title;
-  private String isbn;
-  private String subject;
-  private String publisher;
-  private String language;
-  private int numberOfPages;
-  private UUID authorId;
+  private String street;
+  private String city;
+  private String state;
+  private String zipCode;
+  private String country;
 
 }

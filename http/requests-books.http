@@ -409,11 +409,53 @@ POST http://localhost:10001/books
 Content-Type: application/json
 
 {
-  "title": "Un mundo feliz,Las puertas de la percepción,La isla,Contrapunto",
-  "isbn": "978-0060535261",
+  "title": "Un mundo feliz",
+  "isbn": "9788497594257",
   "subject": "Fiction",
-  "publisher": "Harper Perennial Modern Classics",
-  "language": "English",
+  "publisher": "DEBOLSILLO",
+  "language": "Spanish",
+  "numberOfPages": 256,
+  "authorId": "f4be148a-43d4-40f6-a852-fd2f469b6618"
+}
+
+###
+POST http://localhost:10001/books
+Content-Type: application/json
+
+{
+  "title": "Las puertas de la percepción",
+  "isbn": "978-6073172998",
+  "subject": "Fiction",
+  "publisher": "Penguin Random House Grupo Editorial",
+  "language": "Spanish",
+  "numberOfPages": 192,
+  "authorId": "f4be148a-43d4-40f6-a852-fd2f469b6618"
+}
+
+###
+POST http://localhost:10001/books
+Content-Type: application/json
+
+{
+  "title": "La isla",
+  "isbn": "978-8435018616",
+  "subject": "Fiction",
+  "publisher": "Edhasa",
+  "language": "Spanish",
+  "numberOfPages": 576,
+  "authorId": "f4be148a-43d4-40f6-a852-fd2f469b6618"
+}
+
+###
+POST http://localhost:10001/books
+Content-Type: application/json
+
+{
+  "title": "Contrapunto",
+  "isbn": "978-8435009355",
+  "subject": "Fiction",
+  "publisher": "Editora y Distribuidora Hispano Americana, S.A.",
+  "language": "Spanish",
   "numberOfPages": 432,
   "authorId": "f4be148a-43d4-40f6-a852-fd2f469b6618"
 }

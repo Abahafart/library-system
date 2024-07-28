@@ -71,6 +71,7 @@ public class TechnicalStructureTest {
  * do not include classes that are auto generated or exclude some class or specific package
  */
 class DoNotIncludeGenerated implements ImportOption {
+
   @Override
   public boolean includes(Location location) {
     return !location.contains("build/generated") && !location.contains("__");

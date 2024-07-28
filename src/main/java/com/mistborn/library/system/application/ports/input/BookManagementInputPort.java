@@ -1,30 +1,37 @@
 package com.mistborn.library.system.application.ports.input;
 
 import static com.mistborn.library.system.domain.constants.BookConstants.AUTHOR;
+import static com.mistborn.library.system.domain.constants.BookConstants.PUBLICATION_DATE;
 import static com.mistborn.library.system.domain.constants.BookConstants.SUBJECT;
 import static com.mistborn.library.system.domain.constants.BookConstants.TITLE;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
 import com.mistborn.library.system.application.ServiceComponent;
 import com.mistborn.library.system.application.ports.output.AuthorPersistenceManagement;
+import com.mistborn.library.system.application.ports.output.BookItemPersistenceManagement;
 import com.mistborn.library.system.application.ports.output.BookPersistenceManagement;
 import com.mistborn.library.system.application.usecases.BookManagement;
 import com.mistborn.library.system.domain.AuthorDO;
 import com.mistborn.library.system.domain.BookDO;
+import com.mistborn.library.system.domain.BookItemDO;
 
 @ServiceComponent
 public class BookManagementInputPort implements BookManagement {
 
   private final BookPersistenceManagement persistenceManagement;
   private final AuthorPersistenceManagement authorPersistenceManagement;
+  private final BookItemPersistenceManagement bookItemPersistenceManagement;
 
   public BookManagementInputPort(BookPersistenceManagement persistenceManagement,
-      AuthorPersistenceManagement authorPersistenceManagement) {
+      AuthorPersistenceManagement authorPersistenceManagement,
+      BookItemPersistenceManagement bookItemPersistenceManagement) {
     this.persistenceManagement = persistenceManagement;
     this.authorPersistenceManagement = authorPersistenceManagement;
+    this.bookItemPersistenceManagement = bookItemPersistenceManagement;
   }
 
   @Override
@@ -56,6 +63,12 @@ public class BookManagementInputPort implements BookManagement {
     if (queryParams.containsKey(SUBJECT)) {
       records.addAll(persistenceManagement.findBySubject(queryParams.get(SUBJECT)));
     }
+    if (queryParams.containsKey(PUBLICATION_DATE)) {
+      LocalDate publicationDate = LocalDate.parse(queryParams.get(PUBLICATION_DATE));
+      records.addAll(bookItemPersistenceManagement.findByPublicationDate(publicationDate)
+          .stream().map(BookItemDO::getBook).map(BookDO::getId).map(persistenceManagement::getById)
+          .toList());
+    }
     return records;
   }
 
@@ -65,7 +78,7 @@ public class BookManagementInputPort implements BookManagement {
   }
 
   @Override
-  public BookDO update(BookDO model) {
+  public void update(BookDO model) {
     AuthorDO authorFound = authorPersistenceManagement.getById(model.getAuthor().getId());
     model.setAuthor(authorFound);
     BookDO bookFound = persistenceManagement.getById(model.getId());
@@ -87,7 +100,7 @@ public class BookManagementInputPort implements BookManagement {
     if (model.getNumberOfPages() > 0 && model.getNumberOfPages() != bookFound.getNumberOfPages()) {
       bookFound.setNumberOfPages(model.getNumberOfPages());
     }
-    return persistenceManagement.update(bookFound);
+    persistenceManagement.update(bookFound);
   }
 
   private boolean validateString(String input) {

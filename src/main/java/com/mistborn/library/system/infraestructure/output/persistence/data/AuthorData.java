@@ -11,7 +11,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@Entity(name = "author")
+@Entity(name = "authors")
 public class AuthorData {
 
   @Id

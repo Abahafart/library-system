@@ -28,7 +28,8 @@ public class WriteToMasterReadFromReplicaConfiguration {
         .readFrom(ReadFrom.REPLICA_PREFERRED)
         .clientResources(clientResources)
         .build();
-    RedisStandaloneConfiguration serverConfiguration = new RedisStandaloneConfiguration("localhost", 6379);
+    RedisStandaloneConfiguration serverConfiguration = new RedisStandaloneConfiguration("localhost",
+        6379);
     return new LettuceConnectionFactory(serverConfiguration, clientConfiguration);
   }
 }

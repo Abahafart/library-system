@@ -13,6 +13,6 @@ public interface BookManagement extends GeneralManagement<BookDO> {
 
   void deleteById(String id);
 
-  BookDO update(BookDO bookDO);
+  void update(BookDO bookDO);
 
 }
