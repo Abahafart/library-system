@@ -48,6 +48,7 @@ dependencies {
     testImplementation("com.tngtech.archunit:archunit-junit5:${property("archunitVersion")}")
     testImplementation("org.junit.jupiter:junit-jupiter-api:${property("jupiterApiVersion")}")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+    implementation("io.vavr:vavr:${property("ioVavrVersion")}")
 }
 
 dependencyManagement {

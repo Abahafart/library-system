@@ -15,6 +15,6 @@ public class LibraryDO {
 
   private String id;
   private String name;
-  private String address;
+  private AddressDO address;
 
 }

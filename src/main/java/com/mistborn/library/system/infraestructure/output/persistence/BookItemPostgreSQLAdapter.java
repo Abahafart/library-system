@@ -8,6 +8,7 @@ import org.springframework.stereotype.Repository;
 import com.mistborn.library.system.application.ports.output.BookItemPersistenceManagement;
 import com.mistborn.library.system.domain.BookItemDO;
 import com.mistborn.library.system.infraestructure.mappers.BookItemMapper;
+import com.mistborn.library.system.infraestructure.output.persistence.data.BookItemData;
 import com.mistborn.library.system.infraestructure.output.persistence.repository.BookItemRepository;
 
 @Repository
@@ -35,5 +36,11 @@ public class BookItemPostgreSQLAdapter implements BookItemPersistenceManagement 
   @Override
   public void deleteById(String id) {
 
+  }
+
+  @Override
+  public BookItemDO create(BookItemDO bookItemDO) {
+    BookItemData bookItemData = mapper.toEntity(bookItemDO);
+    return mapper.fromEntity(repository.save(bookItemData));
   }
 }

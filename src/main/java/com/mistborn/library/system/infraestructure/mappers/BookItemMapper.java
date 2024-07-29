@@ -14,6 +14,11 @@ public interface BookItemMapper extends
     GenericMapper<BookItemDO, BookItemRequest, BookItemResponse, BookItemData> {
 
   @Override
+  @Mapping(target = "bookId", source = "book.id")
+  @Mapping(target = "libraryId", source = "library.id")
+  BookItemData toEntity(BookItemDO model);
+
+  @Override
   @Mapping(target = "book.id", source = "bookId")
   BookItemDO fromEntity(BookItemData entity);
 }

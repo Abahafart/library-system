@@ -8,6 +8,6 @@ import lombok.Setter;
 public class LibraryRequest {
 
   private String name;
-  private String address;
+  private AddressRequest address;
 
 }

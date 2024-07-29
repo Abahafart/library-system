@@ -12,5 +12,6 @@ public interface BookItemPersistenceManagement {
   void update(BookItemDO bookItemDO);
 
   void deleteById(String id);
+  BookItemDO create(BookItemDO bookItemDO);
 
 }
