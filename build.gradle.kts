@@ -57,6 +57,16 @@ dependencyManagement {
     }
 }
 
+tasks.jar {
+    manifest {
+        attributes["Main-Class"] = "com.mistborn.library.system.Application"
+    }
+}
+
+tasks.bootJar {
+    mainClass.set("com.mistborn.library.system.Application")
+}
+
 springBoot() {
     mainClass.set("com.mistborn.library.system.Application")
 }
